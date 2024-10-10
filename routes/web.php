@@ -12,4 +12,6 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+Route::get('/opportunities', \App\Livewire\Opportunities::class);
+
 require __DIR__.'/auth.php';
